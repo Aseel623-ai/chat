@@ -34,7 +34,7 @@ if not Config.GEMINI_API_KEY:
 # Configure Gemini
 try:
     genai.configure(api_key=Config.GEMINI_API_KEY)
-    model_gemini = genai.GenerativeModel(model_name="models/gemini-1.5-flash")  # Updated to newer model
+    model_gemini = genai.GenerativeModel(model_name="models/gemini-2.0-flash")  # Updated to newer model
     logger.info("Gemini AI configured successfully")
 except Exception as e:
     logger.error(f"Failed to configure Gemini: {str(e)}")
